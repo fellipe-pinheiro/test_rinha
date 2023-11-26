@@ -8,6 +8,9 @@ def app() -> FastAPI:
 
     @app.post("/pessoas", status_code=status.HTTP_201_CREATED)
     async def add(pessoa: PessoaSchema, response: Response):
+        """
+        Doc:
+        """
         pessoa.id = uuid4()
         response.headers["Location"] = f"/pessoas/{pessoa.id}"
         return pessoa
