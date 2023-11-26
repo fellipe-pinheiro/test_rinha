@@ -12,7 +12,7 @@ def app() -> FastAPI:
         response.headers["Location"] = f"/pessoas/{pessoa.id}"
         return pessoa
 
-    @app.post("/pessoas/{id}", status_code=status.HTTP_200_OK)
+    @app.get("/pessoas/{id}", status_code=status.HTTP_200_OK)
     async def get(id: uuid4, response: Response):
         response.headers["Location"] = f"/pessoas/{id}"
         return {"id": id}
