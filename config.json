@@ -1,6 +1,6 @@
 {
   "include":[
     ["main.py", "schema.py"],
-    ["worker.py"]
+    ["worker/consumer.py"]
   ]
 }
