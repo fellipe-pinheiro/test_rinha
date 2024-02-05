@@ -8,7 +8,7 @@ packages = [{include = "test_rinha"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fastapi = "^0.103.1"
+fastapi = "^0.109.1"
 uvicorn = "^0.23.2"
 
 
